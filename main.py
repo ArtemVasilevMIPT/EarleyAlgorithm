@@ -128,16 +128,10 @@ if __name__ == '__main__':
     S = int(input())
     print("Введите количество правил в грамматике: ", end='')
     P = int(input())
-    non_terms = []
     print("Введите нетерминальные символы:")
-    for i in range(N):
-        n = input()
-        non_terms += [n]
-    terms = []
+    non_terms = input().split(' ')
     print("Введите терминальные символы:")
-    for i in range(S):
-        t = input()
-        terms += [t]
+    terms = input().split(' ')
     rules = []
     print("Введите правила грамматики: ")
     for i in range(P):
